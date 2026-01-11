@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "redot": {
+      "type": "local",
+      "command": [
+        "/home/micqdf/github/redot-engine/redot-mcp.sh",
+        "/home/micqdf/opencode-test"
+      ],
+      "enabled": true
+    }
+  }
+}

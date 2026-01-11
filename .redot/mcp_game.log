@@ -1,0 +1,115 @@
+Game state changed to: PLAYING
+Paddle ready - monitoring: true monitorable: true
+Paddle collision_layer: 2 mask: 1
+Paddle groups: [&"paddles"]
+Paddle ready - monitoring: true monitorable: true
+Paddle collision_layer: 2 mask: 1
+Paddle groups: [&"paddles"]
+Grace period ended. Power-ups can now be collected.
+Spawning power-up...
+Level Up! New speed: 410.0
+Spawning power-up...
+Power-up collected by Player: 3
+Power-up collected by Player: 0
+Spawning power-up...
+Power-up collected by Player: 0
+Level Up! New speed: 650.0
+Spawning power-up...
+Power-up collected by Player: 1
+Grace period ended. Power-ups can now be collected.
+Spawning power-up...
+Level Up! New speed: 410.0
+Spawning power-up...
+Level Up! New speed: 520.0
+Spawning power-up...
+Grace period ended. Power-ups can now be collected.
+Level Up! New speed: 410.0
+Spawning power-up...
+Power-up collected by AI: 3
+Grace period ended. Power-ups can now be collected.
+Grace period ended. Power-ups can now be collected.
+Level Up! New speed: 410.0
+Spawning power-up...
+Level Up! New speed: 520.0
+Power-up collected by Player: 3
+Grace period ended. Power-ups can now be collected.
+Spawning power-up...
+Level Up! New speed: 410.0
+Level Up! New speed: 520.0
+Spawning power-up...
+Power-up collected by Player: 1
+Level Up! New speed: 340.0
+Level Up! New speed: 650.0
+Spawning power-up...
+Power-up collected by Player: 3
+Power-up collected by Player: 0
+Grace period ended. Power-ups can now be collected.
+Spawning power-up...
+Level Up! New speed: 410.0
+Grace period ended. Power-ups can now be collected.
+Spawning power-up...
+Level Up! New speed: 410.0
+Spawning power-up...
+Power-up collected by Player: 1
+Power-up collected by AI: 4
+Paddle boost active! Next 5 hits will be extra fast.
+Paddle boost! Hits remaining: 4
+Spawning power-up...
+Paddle boost! Hits remaining: 3
+Level Up! New speed: 720.0
+Paddle boost! Hits remaining: 2
+Grace period ended. Power-ups can now be collected.
+Spawning power-up...
+Power-up collected by AI: 0
+Grace period ended. Power-ups can now be collected.
+Spawning power-up...
+Power-up collected by AI: 1
+Level Up! New speed: 230.0
+Spawning power-up...
+Spawning power-up...
+Power-up collected by Player: 1
+Level Up! New speed: 470.0
+Power-up collected by AI: 2
+Spawning power-up...
+Power-up collected by Player: 4
+Paddle boost active! Next 5 hits will be extra fast.
+Grace period ended. Power-ups can now be collected.
+Spawning power-up...
+Power-up collected by Player: 1
+Level Up! New speed: 230.0
+Spawning power-up...
+Level Up! New speed: 470.0
+Spawning power-up...
+Power-up collected by AI: 4
+Paddle boost active! Next 5 hits will be extra fast.
+Power-up collected by AI: 2
+Paddle boost! Hits remaining: 4
+AI shield blocked score!
+Paddle boost! Hits remaining: 3
+Paddle boost! Hits remaining: 2
+Paddle boost! Hits remaining: 1
+Paddle boost! Hits remaining: 0
+Spawning power-up...
+Grace period ended. Power-ups can now be collected.
+Level Up! New speed: 410.0
+Spawning power-up...
+Level Up! New speed: 520.0
+Power-up collected by Player: 2
+Level Up! New speed: 630.0
+Spawning power-up...
+Grace period ended. Power-ups can now be collected.
+Level Up! New speed: 410.0
+Spawning power-up...
+Power-up collected by Player: 2
+Power-up collected by Player: 2
+Level Up! New speed: 520.0
+Grace period ended. Power-ups can now be collected.
+Spawning power-up...
+Level Up! New speed: 410.0
+Level Up! New speed: 520.0
+Spawning power-up...
+Game state changed to: GAME_OVER
+Game Over! Winner: PLAYER
+Game state changed to: GAME_OVER
+WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
+   at: cleanup (core/object/object.cpp:2570)

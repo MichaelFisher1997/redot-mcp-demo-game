@@ -1,0 +1,18 @@
+# Redot 4+ specific ignores
+.godot/
+/android/
+*.translation
+export_presets.cfg
+
+# Imported assets (automatic)
+*.import
+
+# Mono/C# builds
+.mono/
+.vscode/
+*.csproj
+*.sln
+
+# OS specific
+.DS_Store
+Thumbs.db

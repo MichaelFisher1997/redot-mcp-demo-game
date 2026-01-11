@@ -1,0 +1,5 @@
+[gd_resource type="Environment" format=3]
+
+[resource]
+glow_intensity = 0.0
+glow_strength = 0.0

@@ -1,0 +1,82 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_main"]
+[ext_resource type="PackedScene" path="res://scenes/paddle.tscn" id="2_paddle"]
+[ext_resource type="Script" path="res://scripts/paddle.gd" id="3_03owx"]
+[ext_resource type="PackedScene" path="res://scenes/ai_paddle.tscn" id="3_ai_paddle"]
+[ext_resource type="PackedScene" path="res://scenes/ball.tscn" id="4_ball"]
+[ext_resource type="PackedScene" path="res://scenes/PauseMenu.tscn" id="5_pause_menu"]
+[ext_resource type="Script" path="res://scripts/ai_paddle.gd" id="5_wkp8b"]
+[ext_resource type="Script" path="res://scripts/ball.gd" id="7_20pc6"]
+[ext_resource type="Script" path="res://scripts/pause_menu.gd" id="9_5vvyt"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_main")
+
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnimatedBackground" type="ColorRect" parent="."]
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.05, 0.05, 0.1, 1)
+
+[node name="CenterLine" type="Line2D" parent="."]
+points = PackedVector2Array(398, 0, 398, 600, 402, 0, 402, 600)
+width = 4.0
+default_color = Color(0.5, 0.5, 0.5, 0.3)
+
+[node name="PlayerPaddle" type="Area2D" parent="." instance=ExtResource("2_paddle")]
+position = Vector2(30, 300)
+collision_layer = 2
+script = ExtResource("3_03owx")
+
+[node name="AIPaddle" type="Area2D" parent="." instance=ExtResource("3_ai_paddle")]
+position = Vector2(750, 300)
+collision_layer = 2
+script = ExtResource("5_wkp8b")
+
+[node name="Ball" type="Area2D" parent="." instance=ExtResource("4_ball")]
+collision_mask = 2
+script = ExtResource("7_20pc6")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="PlayerScore" type="Label" parent="UI"]
+offset_left = 100.0
+offset_top = 30.0
+offset_right = 100.0
+offset_bottom = 30.0
+theme_override_font_sizes/font_size = 64
+text = "0"
+
+[node name="AIScore" type="Label" parent="UI"]
+offset_left = 660.0
+offset_top = 30.0
+offset_right = 660.0
+offset_bottom = 30.0
+theme_override_font_sizes/font_size = 64
+text = "0"
+horizontal_alignment = 2
+
+[node name="PauseMenu" type="Control" parent="UI" instance=ExtResource("5_pause_menu")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("9_5vvyt")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+
+[node name="Grid" type="Node2D" parent="."]
