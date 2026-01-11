@@ -45,3 +45,11 @@ res://scripts/paddle.gd      # Paddle movement logic
 res://scripts/ai_paddle.gd   # AI behavior
 res://scripts/ball.gd        # Ball physics
 ```
+
+## Credits
+
+Built with ❤️ using Redot Engine 26.1
+
+Production-ready Pong game with complete game system, polished UI, and engaging gameplay mechanics.
+
+This project was built using the **Redot MCP Tool** with **OpenCode AI**.
